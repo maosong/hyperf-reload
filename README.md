@@ -24,7 +24,7 @@ $ npm i
 $ ./bin/hyperf-reload --help
 ```
 
-## 二、用例
+## 用例
 
 ### 1. 常规监控
 
