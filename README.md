@@ -68,6 +68,8 @@ hyperf-reload -i "**/docs/** **/.* **/vendor/** **/test/** **/runtime/**" "${hyp
 bash bin/start.sh
 ```
 
+🌞在PhpStorm中配置 `Run/Debug Configurations` 会更加方便
+
 ## 命令行参数
 
 ```
