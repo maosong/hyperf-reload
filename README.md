@@ -73,6 +73,8 @@ bash bin/start.sh
 ## 命令行参数
 
 ```
+$ hyperf-reload --help
+
 Usage: hyperf-reload [options] <hyperf-file> [watch-dirs...]
 
 开发环境监听文件变化，自动重启 Hyperf-Service
