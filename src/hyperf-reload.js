@@ -60,6 +60,7 @@ program
     watchDirs.push(path.dirname(path.dirname(hyperfFile)));
 
     logger.warn('Watch', watchDirs.join(', '));
+    logger.warn('Ignored', program.ignored);
     chokidar
       .watch(watchDirs, {
         ignoreInitial: true,
