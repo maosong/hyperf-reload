@@ -8,6 +8,8 @@
 
 需要nodejs环境，对nodejs/npm不熟悉的同学请[移步此处](https://github.com/maosong/nodejs-install-uninsatll.git)，教你熟练掌握nodejs的安装与卸载。。。
 
+![preview](./preview.png)
+
 ### 1. NPM安装（推荐）
 
 ```bash
