@@ -6,6 +6,8 @@
 
 ## 安装
 
+需要nodejs环境，对nodejs/npm不熟悉的同学请[移步此处](https://github.com/maosong/nodejs-install-uninsatll.git)，教你熟练掌握nodejs的安装与卸载。。。
+
 ### 1. NPM安装（推荐）
 
 ```bash
@@ -26,7 +28,7 @@ $ ./bin/hyperf-reload --help
 
 ## 用例
 
-### 1. 常规监控
+### 1. 基本
 
 ```bash
 $ hyperf-reload /path/to/hyperf.php
