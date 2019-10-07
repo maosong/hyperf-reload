@@ -66,8 +66,8 @@ program
         ignoreInitial: true,
         ignored: program.ignored ? program.ignored.split(' ') : [],
       })
-      .on('all', (event, path) => {
-        debug(`${event} ${path}`);
+      .on('all', (event, ePath) => {
+        debug(`${event} ${ePath}`);
         restartHyperf(program.php, hyperfFile);
       });
   })
