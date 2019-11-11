@@ -10,7 +10,7 @@
     "filewatch"
   ],
   "bin": {
-    "reload-hyperf": "bin/hyperf-reload"
+    "hyperf-reload": "bin/hyperf-reload"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
