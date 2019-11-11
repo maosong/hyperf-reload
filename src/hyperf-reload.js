@@ -10,6 +10,10 @@ const debug = text => {
   if (showDebug) logger.debug(text);
 };
 
+async function sleep(time) {
+  return new Promise(res => setTimeout(res, time));
+}
+
 let hyperfProcess;
 const startHyperf = (php, hyperfFile) => {
   logger.warn('Start', hyperfFile);
@@ -26,6 +30,7 @@ const stopHyperf = (php, hyperfFile) => {
   logger.err(`Stop`, hyperfFile);
   if (hyperfProcess) {
     hyperfProcess.kill();
+    hyperfProcess = undefined;
   }
 };
 
@@ -34,8 +39,9 @@ const restartHyperf = (php, hyperfFile) => {
   if (timeout) {
     clearTimeout(timeout);
   }
-  timeout = setTimeout(() => {
+  timeout = setTimeout(async () => {
     stopHyperf(php, hyperfFile);
+    await sleep(200);
     startHyperf(php, hyperfFile);
   }, 200);
   debug('ready to restart ...');
@@ -46,9 +52,9 @@ program
   .option(
     '-i, --ignored <files>',
     '忽略指定文件(夹)的监听',
-    '**/.* **/vendor/** **/test/** **/runtime/**',
+    '**/.* **/test/* **/runtime/* **/.idea/*',
   )
-  .option('-i, --php <filepath>', 'PHP执行文件路径', 'php')
+  .option('-f, --php <filepath>', 'PHP执行文件路径', 'php')
   .option('-d, --debug', '是否显示调试信息')
   .version(packageInfo.version)
   .description(packageInfo.description)
