@@ -36,7 +36,7 @@ $ hyperf-reload /path/to/hyperf.php
 
 ### 2. 忽略指定文件(夹)的监听
 
-默认忽略 `**/.*` ``**/test/*` `**/runtime/*` `**/.idea/*` 可根据需要自定义。
+默认忽略 `**/.*` `**/test/*` `**/runtime/*` `**/.idea/*` 可根据需要自定义。
 
 ```bash
 $ hyperf-reload -i "**/docs/* **/.* **/test/* **/runtime/* **/.idea/*" /path/to/hyperf.php
