@@ -56,9 +56,9 @@ $ hyperf-reload /path/to/hyperf.php /path/to/resources1 /path/to/resources2 /pat
 
 菜单 > Run > Edit Configurations > Add > Node.js
 
-Working directory: 项目文件夹
-JavaScript file: /usr/local/node/bin/hyperf-reload
-Application parameters: 项目文件夹/bin/hyperf.php
+- Working directory: 项目文件夹
+- JavaScript file: /usr/local/node/bin/hyperf-reload
+- Application parameters: 项目文件夹/bin/hyperf.php
 
 ## 命令行参数
 
